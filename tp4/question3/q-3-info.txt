@@ -1,0 +1,27 @@
+Critique de l'Architecture Actuelle
+
+Modèle en tant que Calculette Utilisant une Pile :
+
+Positif : Utiliser une pile pour les calculs internes est une bonne idée, car cela suit le principe de la calculatrice "Last In, First Out" (LIFO), ce qui est utile pour les calculs.
+
+Négatif : Le modèle pourrait être enrichi pour mieux encapsuler la logique métier (par exemple, gestion des opérations arithmétiques, validation des entrées).
+
+Listeners Locaux au Contrôleur :
+
+Positif : Garder les listeners dans le contrôleur maintient la séparation des préoccupations. Le contrôleur agit comme un intermédiaire entre la vue et le modèle, traitant les entrées de l'utilisateur.
+
+Négatif : Cela pourrait conduire à un contrôleur surchargé et difficile à gérer si l'application devient plus complexe. Une approche plus modulaire ou l'utilisation de sous-contrôleurs pourrait être envisagée.
+
+
+Découpage MVC :
+
+Positif : La structure MVC aide à organiser clairement le code et facilite la maintenance et le test. Chaque composant a un rôle bien défini.
+
+Négatif : Dans la mise en œuvre actuelle, les rôles ne sont peut-être pas aussi bien délimités qu'ils pourraient l'être. Par exemple, la vue pourrait être plus passive, se limitant à l'affichage des données.
+
+
+Modèle (M) : Classe Calculette encapsulant une pile et la logique de calcul. Elle gère les opérations arithmétiques, la validation des entrées et maintient l'état actuel de la calculatrice.
+
+Vue (V) : Classe VueCalculette pour l'affichage. Elle se contente d'afficher les informations provenant du modèle et envoie les actions de l'utilisateur au contrôleur.
+
+Contrôleur (C) : Classe ControleurCalculette gère les interactions entre la vue et le modèle. Il écoute les événements de la vue, effectue des actions sur le modèle et met à jour la vue.
