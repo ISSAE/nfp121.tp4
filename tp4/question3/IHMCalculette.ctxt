@@ -1,5 +1,8 @@
 #BlueJ class context
-comment0.target=IHMCalculette()
-comment1.params=args
-comment1.target=void\ main(String[])
-numComments=2
+comment0.target=IHMCalculette
+comment0.text=\r\n\ 1.Chaque\ partie\ a\ son\ travail\ \:\ Dans\ notre\ programme,\ il\ y\ a\ trois\ grandes\ parties\ \:\r\n\ le\ mod\u00E8le\ (qui\ garde\ les\ donn\u00E9es),\ la\ vue\ (qui\ montre\ les\ choses\ \u00E0\ l'utilisateur),\r\n\ et\ le\ contr\u00F4leur\ (qui\ fait\ le\ lien\ entre\ le\ mod\u00E8le\ et\ la\ vue).\ Vue2\ est\ juste\ une\r\n\ nouvelle\ partie\ qui\ montre\ les\ informations.\ Elle\ ne\ change\ pas\ le\ travail\ des\ autres\r\n\ parties.\r\n\ 2.Observer\ \:\ Vue2\ regarde\ le\ mod\u00E8le.\ Quand\ le\ mod\u00E8le\ change\ (par\ exemple,\ si\ nous\r\n\ ajoutons\ ou\ enlevons\ un\ nombre),\ il\ informe\ Vue2.\ Ainsi,\ Vue2\ sait\ qu'il\ doit\ mettre\r\n\ \u00E0\ jour\ ce\ qu'il\ montre.\ Cela\ se\ fait\ automatiquement\ et\ n'a\ pas\ besoin\ de\ changer\ le\r\n\ mod\u00E8le.\r\n\ 3.Vues\ s\u00E9par\u00E9es\ \:\ Vue2\ est\ ind\u00E9pendant.\ Cela\ signifie\ que\ son\ ajout\ ne\ d\u00E9range\ pas\r\n\ les\ autres\ vues.\ Chaque\ vue\ s'occupe\ de\ ses\ propres\ affaires.\r\n\ 4.Petits\ changements\ \:\ Pour\ ajouter\ Vue2,\ nous\ modifions\ seulement\ la\ classe\ \r\n\ IHMCalculette.\ C'est\ comme\ ajouter\ un\ nouveau\ tableau\ dans\ une\ pi\u00E8ce\ sans\ changer\r\n\ les\ autres\ meubles.\r\n
+comment1.params=
+comment1.target=IHMCalculette()
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3
